@@ -1,0 +1,141 @@
+.home-page{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-container{
+    flex-grow: 8;
+}
+
+.settings-container{
+    border-left: 1px solid grey;
+}
+
+.settings {
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.switch {
+    position: relative;
+    width: 47px;
+    height: 26px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .qrcode-container {
+    margin: 10px
+  }
+
+
+
+
+  .verification-container {
+   width: 238px;
+  }
+   
+  .characters {
+    height: 40px;
+  }
+   
+  .character {
+    line-height: 40px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid black;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
+   
+  .character--inactive {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+  }
+   
+  .character--selected {
+    border: 1px solid rgb(76, 116, 152);
+  }
+
+  .verification-div{
+      margin-top: 20px;
+  }
+
+  .verification-div label{
+    margin: 4px;
+    display: block;
+    color: #000000c7;
+  }
+
+  .apply-button-div{
+    display: flex;
+    justify-content: center;
+}
+
+  .apply-button{
+    cursor: pointer;
+    background-color: #2d525d;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 6px;
+    margin-top: 20px;
+    width: 32%;
+  }
